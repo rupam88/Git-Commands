@@ -1,0 +1,72 @@
+*************GIT COMMANDS*************
+1. Create Empty Git Repository
+$ git init
+
+2. Configure Username and Email with git
+$ git config --global user.name "Enter your name here"
+$ git config --global user.email "Enter your email id here" 
+
+3. Add one or more files to staging (index)
+$ git add <filename>  //for single file
+$ git add .           //for multiple file
+
+4. Commit Changes to head (but not yet to the remote repository)
+$ git commit -m "Print Your Commit Msg Here"
+
+5. List the files you've changed and those you still need to add or commit:
+$ git status
+
+6. Create a working copy of a Remote repository to local:
+$ git clone "Paste your github URL here"
+
+7. Create Your Own Remote 
+$ git remote add <Remote Name> <server URL>
+
+8. Send changes to the master branch of your remote repository:
+$ git push <Remote Name> <Branch Name>
+
+9. Fetch and merge changes on the remote server to your working directory:
+$ git pull 
+
+10. To merge a different branch into your active branch:
+$ git merge <branchname>
+
+11. Create Branch 
+$ git branch <Branch Name>
+
+12. Switch branch from one to other
+$ git branch checkout <Branch Name>
+
+13. Check Branch ( * denotes are you in which branch)
+$ git branch
+
+14. Delete the Branch
+$ git branch -d <branchname>
+ 
+15. Delete file/folder from git
+$ git rm -r <filename/folder name>
+
+16. Stash changes in a dirty working directory
+$ git stash
+
+17. Remove all stashes entry
+$ git stash clear	
+
+18. view changes
+$ git log
+
+19. View changes (detailed)
+$ git log --summary	
+ 
+20. Preview Changes Before Merging
+$ git diff [source branch] [target branch]	 
+ 
+21. Revert GIT in a Commit
+$ git reset HEAD <filename>
+
+22. Rename or Moving file
+$ git mv <file_name> <New_File_Name/Directory_Name>
+
+23. ERROR OCCUR LIKE [Non_Fast Forword]
+$ git pull --rebase <Remote Name> <Branch Name>
+$ git push <Remote Name> <Banch Name>
